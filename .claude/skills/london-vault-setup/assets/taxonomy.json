@@ -1,0 +1,113 @@
+{
+  "_comment": [
+    "The period taxonomy, as data. Edit this file and re-run scripts/build_periods.py to",
+    "regenerate the period notes and the registry table together, so that note names,",
+    "en dashes, and the preceded-by/followed-by chain cannot drift apart by hand.",
+    "Changing this file is a schema change (§4) — it needs the user's approval, and every",
+    "event and claim already linking a renamed period must be migrated."
+  ],
+  "periods": [
+    {
+      "name": "Pre-Roman London",
+      "label": "before 43",
+      "starts": -4000,
+      "ends": 43,
+      "open_start": true,
+      "blurb": "Thames-valley prehistory before the invasion of 43: Neolithic and Bronze Age activity along the river, Bronze Age timber structures and weapon deposits, and the Iron Age territories of the Trinovantes and Catuvellauni.",
+      "note": "The starting bound of 4000 BCE is a convention, not a finding — it marks roughly where Thames-valley evidence becomes continuous rather than scattered. Earlier Palaeolithic and Mesolithic material belongs in this period too; date it with its own ISO year and ignore the nominal bound.\n\nThe substantive point most sources make about this period is a negative one: there is no evidence of a substantial settlement on the site the Romans chose, which makes Londinium a foundation rather than a continuation. Where an author argues otherwise, that is a claim note (§8), not a correction to this period."
+    },
+    {
+      "name": "Roman London",
+      "label": "43–410",
+      "starts": 43,
+      "ends": 410,
+      "blurb": "Londinium founded after the invasion of 43, walled by c. 200, and largely abandoned as an urban centre in the decades after the withdrawal of 410."
+    },
+    {
+      "name": "Saxon London",
+      "label": "410–1066",
+      "starts": 410,
+      "ends": 1066,
+      "blurb": "The walled city stands mostly empty while Lundenwic grows along the Strand; Alfred re-occupies the walls in 886 and the burh becomes London again."
+    },
+    {
+      "name": "Norman London",
+      "label": "1066–1154",
+      "starts": 1066,
+      "ends": 1154,
+      "blurb": "Conquest, the Tower, the White Tower, the first charters, and the Anarchy. Short but structurally decisive for the City's liberties."
+    },
+    {
+      "name": "Medieval London",
+      "label": "1154–1485",
+      "starts": 1154,
+      "ends": 1485,
+      "blurb": "Mayoralty, guilds and livery companies, the Black Death, the Peasants' Revolt, and the long argument between the City and the Crown."
+    },
+    {
+      "name": "Tudor London",
+      "label": "1485–1603",
+      "starts": 1485,
+      "ends": 1603,
+      "blurb": "Dissolution of the monasteries redraws the map of the city; population growth, the first suburbs, and the Royal Exchange."
+    },
+    {
+      "name": "Stuart London",
+      "label": "1603–1714",
+      "starts": 1603,
+      "ends": 1714,
+      "blurb": "Civil War, the Great Plague of 1665, the Great Fire of 1666 and the rebuilding, the Bank of England, and the beginnings of the West End."
+    },
+    {
+      "name": "Georgian London",
+      "label": "1714–1837",
+      "starts": 1714,
+      "ends": 1837,
+      "blurb": "The gates come down, the squares go up, the docks are built, and London becomes the largest city in the world."
+    },
+    {
+      "name": "Victorian London",
+      "label": "1837–1901",
+      "starts": 1837,
+      "ends": 1901,
+      "blurb": "Railways, sewers, the Underground, the Metropolitan Board of Works, and the slums that all of it was meant to answer."
+    },
+    {
+      "name": "Edwardian & WWI London",
+      "label": "1901–1918",
+      "starts": 1901,
+      "ends": 1918,
+      "blurb": "Edwardian confidence and its unravelling: suburban growth along the new tube lines, the LCC at its most ambitious, and the first air raids on the city — Zeppelins from 1915, Gothas from 1917."
+    },
+    {
+      "name": "Interwar London",
+      "label": "1918–1939",
+      "starts": 1918,
+      "ends": 1939,
+      "blurb": "Ribbon development and Metro-land, the LCC cottage estates, the slump and the hunger marches, Underground expansion under Pick and Holden, and the first arguments for a Green Belt."
+    },
+    {
+      "name": "WWII & Blitz London",
+      "label": "1939–1945",
+      "starts": 1939,
+      "ends": 1945,
+      "blurb": "Evacuation, the Blitz of 1940–41, the V-1 and V-2 campaigns of 1944–45, and destruction on a scale that set the terms for everything built in the next thirty years."
+    },
+    {
+      "name": "Postwar London",
+      "label": "1945–1980",
+      "starts": 1945,
+      "ends": 1980,
+      "blurb": "Reconstruction and the Abercrombie plan, the new towns, Windrush and post-war migration, comprehensive redevelopment and the tower block, the GLC, and the long collapse of the docks.",
+      "note": "Named 1945–1980 rather than 1945–1979 to keep the taxonomy's shared-boundary convention: a period's label ends on the year the next one begins, so no year falls between two periods. The substance is unchanged — 1979 is the last full year of this period."
+    },
+    {
+      "name": "Modern & Contemporary London",
+      "label": "1980–present",
+      "starts": 1980,
+      "ends": 2100,
+      "open_end": true,
+      "blurb": "The GLC abolished in 1986, Big Bang and the reinvention of the City, Docklands and Canary Wharf, the Jubilee line extension and Crossrail, and London's return to growth after a century of falling population."
+    }
+  ]
+}
