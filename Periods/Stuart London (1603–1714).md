@@ -10,10 +10,10 @@ followed-by: "[[Georgian London (1714–1837)]]"
 
 Civil War, the Great Plague of 1665, the Great Fire of 1666 and the rebuilding, the Bank of England, and the beginnings of the West End.
 
-Boundary years belong to the later period: 1714 is the first year of the next period, not the last
-of this one (see `_registry/periods.md`). Where a source draws the line differently, follow the
-registry and note the discrepancy in the event body — the value of these links is that they mean
-the same thing in every chapter.
+Boundary years belong to the later period: 1714 is the first year of the next
+period, not the last of this one (see `_registry/periods.md`). Where a source draws the
+line differently, follow the registry and note the discrepancy in the event body — the
+value of these links is that they mean the same thing in every chapter.
 
 ## Events in this period
 

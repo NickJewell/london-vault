@@ -10,10 +10,10 @@ followed-by: "[[Norman London (1066–1154)]]"
 
 The walled city stands mostly empty while Lundenwic grows along the Strand; Alfred re-occupies the walls in 886 and the burh becomes London again.
 
-Boundary years belong to the later period: 1066 is the first year of the next period, not the last
-of this one (see `_registry/periods.md`). Where a source draws the line differently, follow the
-registry and note the discrepancy in the event body — the value of these links is that they mean
-the same thing in every chapter.
+Boundary years belong to the later period: 1066 is the first year of the next
+period, not the last of this one (see `_registry/periods.md`). Where a source draws the
+line differently, follow the registry and note the discrepancy in the event body — the
+value of these links is that they mean the same thing in every chapter.
 
 ## Events in this period
 

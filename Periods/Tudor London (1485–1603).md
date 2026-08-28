@@ -10,10 +10,10 @@ followed-by: "[[Stuart London (1603–1714)]]"
 
 Dissolution of the monasteries redraws the map of the city; population growth, the first suburbs, and the Royal Exchange.
 
-Boundary years belong to the later period: 1603 is the first year of the next period, not the last
-of this one (see `_registry/periods.md`). Where a source draws the line differently, follow the
-registry and note the discrepancy in the event body — the value of these links is that they mean
-the same thing in every chapter.
+Boundary years belong to the later period: 1603 is the first year of the next
+period, not the last of this one (see `_registry/periods.md`). Where a source draws the
+line differently, follow the registry and note the discrepancy in the event body — the
+value of these links is that they mean the same thing in every chapter.
 
 ## Events in this period
 

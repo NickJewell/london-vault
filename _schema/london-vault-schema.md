@@ -95,6 +95,7 @@ This pattern recurs constantly: Bishopsgate, Cripplegate, Ludgate, Newgate (gate
 The period taxonomy is fixed upfront in `/Periods` and `_registry/periods.md`:
 
 ```
+Pre-Roman London (before 43)
 Roman London (43–410)
 Saxon London (410–1066)
 Norman London (1066–1154)
@@ -105,6 +106,17 @@ Georgian London (1714–1837)
 Victorian London (1837–1901)
 20th-Century London (1901–2000)
 ```
+
+The taxonomy lives as data in `.claude/skills/london-vault-setup/assets/taxonomy.json`, and the
+period notes and the registry table are generated from it by `scripts/build_periods.py`. Edit the
+data and regenerate; do not hand-edit period notes or the registry table, because the note names
+carry an en dash and the preceded-by/followed-by chain has to stay consistent in both directions.
+Changing the taxonomy is a schema change: it needs the user's approval, and any event or claim
+already linking a renamed period must be migrated.
+
+`Pre-Roman London` is open at its start. Its `starts: -4000` is a working bound so that timelines
+sort, not a claim about when the story begins; Palaeolithic and Mesolithic material belongs to it
+regardless.
 
 ```yaml
 type: period
@@ -177,6 +189,10 @@ Offices held (Lord Mayor, Bishop of London) use `held-office` with date qualifie
 
 - Normalize all dates to ISO in frontmatter: `date: 1189`, `date: 1666-09-02`, or `date-range: 1066/1087`. Keep the original vague phrasing in the note body ("shortly after the Conquest").
 - Resolve reign-relative dates ("in the reign of Richard II") to approximate ISO ranges using `_registry/reigns.md` (`date-range: 1377/1399`) and record the original phrasing in the body. Never guess a reign range from memory — use the registry table.
+- BCE years are negative: `date: -55` for Caesar's expeditions of 55 BCE, `date-range: -800/43`
+  for the Iron Age. Write "55 BCE" in the body — the negative number is for sorting, and nobody
+  reads `-55` as a year. Note that 1 BCE is `-1` and there is no year zero, so a span crossing the
+  era is one year shorter than subtraction suggests; say so in the body if it matters.
 - "12th century" → `date-range: 1100/1199`. Circa dates: `date: 1200` with `date-precision: circa` and the c. phrasing in the body.
 
 ---

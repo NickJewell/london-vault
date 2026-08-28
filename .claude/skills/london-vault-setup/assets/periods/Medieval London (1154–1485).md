@@ -10,10 +10,10 @@ followed-by: "[[Tudor London (1485–1603)]]"
 
 Mayoralty, guilds and livery companies, the Black Death, the Peasants' Revolt, and the long argument between the City and the Crown.
 
-Boundary years belong to the later period: 1485 is the first year of the next period, not the last
-of this one (see `_registry/periods.md`). Where a source draws the line differently, follow the
-registry and note the discrepancy in the event body — the value of these links is that they mean
-the same thing in every chapter.
+Boundary years belong to the later period: 1485 is the first year of the next
+period, not the last of this one (see `_registry/periods.md`). Where a source draws the
+line differently, follow the registry and note the discrepancy in the event body — the
+value of these links is that they mean the same thing in every chapter.
 
 ## Events in this period
 

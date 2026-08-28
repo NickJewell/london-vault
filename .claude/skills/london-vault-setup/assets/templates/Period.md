@@ -8,9 +8,10 @@ followed-by:
 
 # <% Period name %>
 
-The nine period notes are seeded by `london-vault-setup` and the taxonomy is fixed (§4). This
-template exists for reference, not for routine use — creating a tenth period is a schema change,
-so put it to the user rather than filling this in mid-extraction.
+Period notes are generated from `assets/taxonomy.json` by `london-vault-setup`'s
+`build_periods.py`, so this template is for reference, not for routine use. Adding a period is a
+schema change (§4): put it to the user, edit the taxonomy data, and regenerate — hand-writing a
+period note leaves the registry table and the preceded-by/followed-by chain out of step.
 
 ## Events in this period
 

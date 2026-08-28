@@ -1,6 +1,6 @@
 ---
 name: london-vault-setup
-description: Seed or repair the London history Obsidian vault's structure — the folder tree, the six _registry files (places with hierarchy, people, organizations, periods, the monarch/reign lookup table, the master entity index), the nine period notes, and the per-type note templates. Use this whenever starting a new London vault, beginning a new book in an existing vault, or when extraction reports that a registry or template is missing; and use it before any extraction run, since the schema requires the registries to exist first. Also use when asked to add the wards, the City gates, the period taxonomy, or the reign table to the vault.
+description: Seed or repair the London history Obsidian vault's structure — the folder tree, the six _registry files (places with hierarchy, people, organizations, periods, the monarch/reign lookup table, the master entity index), the period notes, and the per-type note templates. Use this whenever starting a new London vault, beginning a new book in an existing vault, or when extraction reports that a registry or template is missing; and use it before any extraction run, since the schema requires the registries to exist first. Also use when asked to add the wards, the City gates, the period taxonomy, or the reign table to the vault.
 ---
 
 # London Vault — Setup
@@ -21,7 +21,7 @@ python3 .claude/skills/london-vault-setup/scripts/seed_vault.py --vault .       
 ```
 
 It creates the ten folders, copies the six registries into `_registry/`, the eight templates into
-`_templates/`, and the nine period notes into `Periods/`. **It never overwrites.** Anything
+`_templates/`, and the period notes into `Periods/`. **It never overwrites.** Anything
 already present is reported and left alone, because a registry that has been through six chapters
 of extraction holds accumulated aliases that exist nowhere else.
 
@@ -30,6 +30,34 @@ Then confirm what landed:
 ```bash
 ls _registry _templates Periods
 ```
+
+## Changing the period taxonomy
+
+The taxonomy is data: `assets/taxonomy.json`. The period notes in `Periods/`, the table in
+`_registry/periods.md`, and the period rows in `_registry/entities.md` are all generated from it.
+
+```bash
+python3 .claude/skills/london-vault-setup/scripts/build_periods.py --vault . --dry-run
+python3 .claude/skills/london-vault-setup/scripts/build_periods.py --vault .
+```
+
+Regenerating period notes is safe in a way that regenerating any other note would not be: their
+bodies are a blurb and Dataview blocks, with no extracted content to lose. Everything else in the
+vault stays append-only (§11).
+
+Adding a period is a schema change and needs the user's approval (§4). Two things to settle before
+touching the data:
+
+- **Renames migrate.** Every event and claim links a period by exact name, so renaming
+  `20th-Century London (1901–2000)` orphans every link to it. The generator reports leftover notes
+  as STALE but will not rewrite links — grep for the old name and fix them in the same commit, or
+  do the rename before any extraction has happened.
+- **Boundaries move events.** Narrowing a period reassigns events that sat in the part now covered
+  by a neighbour. Nothing detects this: the old link still resolves, it is just wrong. Check
+  affected events by date range after any boundary change.
+
+The generated regions are delimited by `<!-- BEGIN generated: taxonomy -->` markers. Prose outside
+them is preserved; edits inside them are overwritten on the next run.
 
 ## What is deliberately *not* seeded
 

@@ -13,9 +13,12 @@ Each period has a first-class note in `/Periods` (schema §4). Every event and c
 **both** a `period:` link from this table **and** an ISO `date:`/`date-range:` — the link
 answers "show me everything Norman", the date makes timelines sortable.
 
+<!-- BEGIN generated: taxonomy -->
+
 | Period note | Starts | Ends | Preceded by | Followed by |
 |---|---|---|---|---|
-| `[[Roman London (43–410)]]` | 43 | 410 | — | Saxon London |
+| `[[Pre-Roman London (before 43)]]` | -4000* | 43 | — | Roman London |
+| `[[Roman London (43–410)]]` | 43 | 410 | Pre-Roman London | Saxon London |
 | `[[Saxon London (410–1066)]]` | 410 | 1066 | Roman London | Norman London |
 | `[[Norman London (1066–1154)]]` | 1066 | 1154 | Saxon London | Medieval London |
 | `[[Medieval London (1154–1485)]]` | 1154 | 1485 | Norman London | Tudor London |
@@ -24,6 +27,10 @@ answers "show me everything Norman", the date makes timelines sortable.
 | `[[Georgian London (1714–1837)]]` | 1714 | 1837 | Stuart London | Victorian London |
 | `[[Victorian London (1837–1901)]]` | 1837 | 1901 | Georgian London | 20th-Century London |
 | `[[20th-Century London (1901–2000)]]` | 1901 | 2000 | Victorian London | — |
+
+\* open at the start — the bound is a working value so timelines sort, not a claim.
+
+<!-- END generated: taxonomy -->
 
 ## Assigning a period
 
@@ -39,5 +46,9 @@ discrepancy in the body — consistency is what makes the period queries trustwo
 range's **start**, and mention the span in the body. If the event is genuinely about the
 transition itself, link both periods as a list.
 
-**Before 43 CE or after 2000**: there is no period note. Use the ISO date alone, omit `period:`,
-and tag `#flag/vocab-gap` so the user can decide whether the taxonomy needs extending.
+**Before 43 CE**: use `[[Pre-Roman London (before 43)]]`, however early the material — the period
+is open at its start, and its nominal `starts: -4000` is a sorting bound, not a boundary. BCE
+years go in frontmatter as negative numbers (`date: -55`) with "55 BCE" written in the body.
+
+**After 2000**: there is no period note. Use the ISO date alone, omit `period:`, and tag
+`#flag/vocab-gap` so the user can decide whether the taxonomy needs extending.

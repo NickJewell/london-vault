@@ -10,10 +10,10 @@ followed-by: "[[Medieval London (1154–1485)]]"
 
 Conquest, the Tower, the White Tower, the first charters, and the Anarchy. Short but structurally decisive for the City's liberties.
 
-Boundary years belong to the later period: 1154 is the first year of the next period, not the last
-of this one (see `_registry/periods.md`). Where a source draws the line differently, follow the
-registry and note the discrepancy in the event body — the value of these links is that they mean
-the same thing in every chapter.
+Boundary years belong to the later period: 1154 is the first year of the next
+period, not the last of this one (see `_registry/periods.md`). Where a source draws the
+line differently, follow the registry and note the discrepancy in the event body — the
+value of these links is that they mean the same thing in every chapter.
 
 ## Events in this period
 

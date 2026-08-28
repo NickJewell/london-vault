@@ -2,7 +2,7 @@
 type: period
 starts: 43
 ends: 410
-preceded-by: 
+preceded-by: "[[Pre-Roman London (before 43)]]"
 followed-by: "[[Saxon London (410–1066)]]"
 ---
 
@@ -10,10 +10,10 @@ followed-by: "[[Saxon London (410–1066)]]"
 
 Londinium founded after the invasion of 43, walled by c. 200, and largely abandoned as an urban centre in the decades after the withdrawal of 410.
 
-Boundary years belong to the later period: 410 is the first year of the next period, not the last
-of this one (see `_registry/periods.md`). Where a source draws the line differently, follow the
-registry and note the discrepancy in the event body — the value of these links is that they mean
-the same thing in every chapter.
+Boundary years belong to the later period: 410 is the first year of the next
+period, not the last of this one (see `_registry/periods.md`). Where a source draws the
+line differently, follow the registry and note the discrepancy in the event body — the
+value of these links is that they mean the same thing in every chapter.
 
 ## Events in this period
 

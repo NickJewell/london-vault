@@ -10,10 +10,10 @@ followed-by: "[[20th-Century London (1901–2000)]]"
 
 Railways, sewers, the Underground, the Metropolitan Board of Works, and the slums that all of it was meant to answer.
 
-Boundary years belong to the later period: 1901 is the first year of the next period, not the last
-of this one (see `_registry/periods.md`). Where a source draws the line differently, follow the
-registry and note the discrepancy in the event body — the value of these links is that they mean
-the same thing in every chapter.
+Boundary years belong to the later period: 1901 is the first year of the next
+period, not the last of this one (see `_registry/periods.md`). Where a source draws the
+line differently, follow the registry and note the discrepancy in the event body — the
+value of these links is that they mean the same thing in every chapter.
 
 ## Events in this period
 
