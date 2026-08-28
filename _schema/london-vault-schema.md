@@ -104,7 +104,11 @@ Tudor London (1485–1603)
 Stuart London (1603–1714)
 Georgian London (1714–1837)
 Victorian London (1837–1901)
-20th-Century London (1901–2000)
+Edwardian & WWI London (1901–1918)
+Interwar London (1918–1939)
+WWII & Blitz London (1939–1945)
+Postwar London (1945–1980)
+Modern & Contemporary London (1980–present)
 ```
 
 The taxonomy lives as data in `.claude/skills/london-vault-setup/assets/taxonomy.json`, and the
@@ -114,9 +118,16 @@ carry an en dash and the preceded-by/followed-by chain has to stay consistent in
 Changing the taxonomy is a schema change: it needs the user's approval, and any event or claim
 already linking a renamed period must be migrated.
 
-`Pre-Roman London` is open at its start. Its `starts: -4000` is a working bound so that timelines
-sort, not a claim about when the story begins; Palaeolithic and Mesolithic material belongs to it
-regardless.
+The taxonomy is deliberately uneven. The 20th century is divided finely because the sources treat
+it finely — a claim about Interwar London and one about the Blitz are not usefully filed together —
+while Medieval London runs for three centuries as one period. Granularity follows how the material
+is written about, not a fixed span, and other periods can be subdivided the same way when a book
+gives reason to.
+
+Two periods are open-ended. `Pre-Roman London` has `starts: -4000` and `Modern & Contemporary
+London` has `ends: 2100`; both are working bounds so timelines sort and date comparisons behave,
+not claims. Palaeolithic material belongs to the first and anything after 2100 to the second,
+whatever the bound says.
 
 ```yaml
 type: period

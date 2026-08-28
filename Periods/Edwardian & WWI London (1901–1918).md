@@ -1,16 +1,16 @@
 ---
 type: period
-starts: 1837
-ends: 1901
-preceded-by: "[[Georgian London (1714–1837)]]"
-followed-by: "[[Edwardian & WWI London (1901–1918)]]"
+starts: 1901
+ends: 1918
+preceded-by: "[[Victorian London (1837–1901)]]"
+followed-by: "[[Interwar London (1918–1939)]]"
 ---
 
-# Victorian London (1837–1901)
+# Edwardian & WWI London (1901–1918)
 
-Railways, sewers, the Underground, the Metropolitan Board of Works, and the slums that all of it was meant to answer.
+Edwardian confidence and its unravelling: suburban growth along the new tube lines, the LCC at its most ambitious, and the first air raids on the city — Zeppelins from 1915, Gothas from 1917.
 
-Boundary years belong to the later period: 1901 is the first year of the next
+Boundary years belong to the later period: 1918 is the first year of the next
 period, not the last of this one (see `_registry/periods.md`). Where a source draws the
 line differently, follow the registry and note the discrepancy in the event body — the
 value of these links is that they mean the same thing in every chapter.

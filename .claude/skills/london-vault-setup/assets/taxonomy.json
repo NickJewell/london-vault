@@ -73,11 +73,41 @@
       "blurb": "Railways, sewers, the Underground, the Metropolitan Board of Works, and the slums that all of it was meant to answer."
     },
     {
-      "name": "20th-Century London",
-      "label": "1901–2000",
+      "name": "Edwardian & WWI London",
+      "label": "1901–1918",
       "starts": 1901,
-      "ends": 2000,
-      "blurb": "The Blitz and the rebuilding, the LCC and the GLC, post-war immigration, the collapse and reinvention of the docks."
+      "ends": 1918,
+      "blurb": "Edwardian confidence and its unravelling: suburban growth along the new tube lines, the LCC at its most ambitious, and the first air raids on the city — Zeppelins from 1915, Gothas from 1917."
+    },
+    {
+      "name": "Interwar London",
+      "label": "1918–1939",
+      "starts": 1918,
+      "ends": 1939,
+      "blurb": "Ribbon development and Metro-land, the LCC cottage estates, the slump and the hunger marches, Underground expansion under Pick and Holden, and the first arguments for a Green Belt."
+    },
+    {
+      "name": "WWII & Blitz London",
+      "label": "1939–1945",
+      "starts": 1939,
+      "ends": 1945,
+      "blurb": "Evacuation, the Blitz of 1940–41, the V-1 and V-2 campaigns of 1944–45, and destruction on a scale that set the terms for everything built in the next thirty years."
+    },
+    {
+      "name": "Postwar London",
+      "label": "1945–1980",
+      "starts": 1945,
+      "ends": 1980,
+      "blurb": "Reconstruction and the Abercrombie plan, the new towns, Windrush and post-war migration, comprehensive redevelopment and the tower block, the GLC, and the long collapse of the docks.",
+      "note": "Named 1945–1980 rather than 1945–1979 to keep the taxonomy's shared-boundary convention: a period's label ends on the year the next one begins, so no year falls between two periods. The substance is unchanged — 1979 is the last full year of this period."
+    },
+    {
+      "name": "Modern & Contemporary London",
+      "label": "1980–present",
+      "starts": 1980,
+      "ends": 2100,
+      "open_end": true,
+      "blurb": "The GLC abolished in 1986, Big Bang and the reinvention of the City, Docklands and Canary Wharf, the Jubilee line extension and Crossrail, and London's return to growth after a century of falling population."
     }
   ]
 }

@@ -39,6 +39,8 @@ def render_note(p: dict, prev: dict | None, nxt: dict | None) -> str:
         f"period, not the last of this one (see `_registry/periods.md`). Where a source draws the\n"
         f"line differently, follow the registry and note the discrepancy in the event body — the\n"
         f"value of these links is that they mean the same thing in every chapter.\n"
+    ) if nxt else (
+        "This is the last period in the taxonomy, so it has no upper boundary to share.\n"
     )
     extra = f"\n{p['note']}\n" if p.get("note") else ""
     open_start = ""
@@ -46,6 +48,12 @@ def render_note(p: dict, prev: dict | None, nxt: dict | None) -> str:
         open_start = (
             "\nThis period is open at its start: `starts` is a working bound so that timelines\n"
             "sort, not a claim about when the story begins.\n"
+        )
+    if p.get("open_end"):
+        open_start += (
+            "\nThis period is open at its end: `ends` is a working bound so that timelines sort\n"
+            "and date comparisons behave, not a prediction. Material later than the bound still\n"
+            "belongs here — date it with its own ISO year.\n"
         )
     return f"""---
 type: period
@@ -97,10 +105,11 @@ def render_table(periods: list[dict]) -> str:
         prev = periods[i - 1]["name"] if i else "—"
         nxt = periods[i + 1]["name"] if i < len(periods) - 1 else "—"
         starts = f"{p['starts']}*" if p.get("open_start") else p["starts"]
-        lines.append(f"| `[[{note_name(p)}]]` | {starts} | {p['ends']} | {prev} | {nxt} |")
+        ends = f"{p['ends']}*" if p.get("open_end") else p["ends"]
+        lines.append(f"| `[[{note_name(p)}]]` | {starts} | {ends} | {prev} | {nxt} |")
     lines += [
         "",
-        "\\* open at the start — the bound is a working value so timelines sort, not a claim.",
+        "\\* open bound — a working value so timelines sort and date comparisons behave, not a claim.",
         "",
         END,
     ]

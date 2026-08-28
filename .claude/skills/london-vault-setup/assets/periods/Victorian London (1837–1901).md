@@ -3,7 +3,7 @@ type: period
 starts: 1837
 ends: 1901
 preceded-by: "[[Georgian London (1714–1837)]]"
-followed-by: "[[20th-Century London (1901–2000)]]"
+followed-by: "[[Edwardian & WWI London (1901–1918)]]"
 ---
 
 # Victorian London (1837–1901)

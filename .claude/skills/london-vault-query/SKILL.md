@@ -9,10 +9,11 @@ The schema is built so that the interesting questions are *queries*, not re-read
 footprint (§6), everything Norman (§4), all structural changes to the wall and gates sorted by
 date (§5). This skill covers writing those queries and answering questions from the vault.
 
-**Dataview is not installed in this vault.** The query blocks in the templates are inert until the
-user installs it from Obsidian's community plugins. Say so once when it is relevant, then answer
-the question anyway — everything Dataview can derive is derivable from the Markdown directly, and
-`grep` over frontmatter is a perfectly good substitute for answering a question now.
+Dataview is installed, so the query blocks in the templates render and a question can be answered
+by adding a query to a note. But you cannot see what a query renders — Dataview evaluates inside
+Obsidian, not here. When the user wants an *answer* rather than a query block, read the vault
+directly as below; when they want a *view*, write the query into the note. Do not write a query,
+assume its output, and report that as the answer.
 
 ## Answering from the vault directly
 
@@ -91,7 +92,8 @@ Almost always one of five things, in rough order of likelihood:
    body but never given an event note is invisible to every event query — a state-vs-event error
    (§5), and the fix is to create the event, not to loosen the query.
 4. **Wrong folder.** `FROM "Events"` misses an event note filed under `/Places`.
-5. **Dataview is not installed**, so the block renders as a code fence.
+5. **The block is not tagged `dataview`**, so it renders as a plain code fence. The opening fence
+   must read ```` ```dataview ````.
 
 Before concluding the vault lacks something, check 1–3 — the difference between "the vault does
 not know this" and "the vault knows this and the query cannot see it" matters enormously, and only

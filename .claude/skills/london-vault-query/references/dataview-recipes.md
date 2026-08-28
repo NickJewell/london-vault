@@ -81,6 +81,34 @@ Note that `date-range` events will not match a date comparison — they are a di
 catch both, query them separately and merge by eye; a single query that handles both is possible
 but fragile enough that it tends to hide the cases it drops.
 
+**Spanning several periods** — the 20th century is divided into five periods (Edwardian & WWI,
+Interwar, WWII & Blitz, Postwar, Modern & Contemporary), so "the whole 20th century" is an OR
+across them rather than one link:
+
+````
+```dataview
+TABLE date, actor, affected, period FROM "Events"
+WHERE any(map(period, (p) => contains(meta(p).path, "London (19")))
+SORT date ASC
+```
+````
+
+That relies on a naming coincidence and will not age well. Prefer the date form, which says what
+it means and is immune to the taxonomy being resubdivided again:
+
+````
+```dataview
+TABLE date, actor, affected, period FROM "Events"
+WHERE date >= date("1901-01-01") AND date < date("2001-01-01")
+SORT date ASC
+```
+````
+
+The general point: **query by period link when you mean the era, by date when you mean the span.**
+"Everything Interwar" is a period question — the link carries the judgement that an event belongs
+to that era, which a date range cannot reconstruct. "Everything between 1901 and 2000" is a date
+question, and going through period links would make it hostage to how the taxonomy is cut.
+
 **Structural changes to the wall and gates** — the §5 query the state-vs-event rule exists for:
 
 ````

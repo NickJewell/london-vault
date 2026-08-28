@@ -1,16 +1,16 @@
 ---
 type: period
-starts: 1837
-ends: 1901
-preceded-by: "[[Georgian London (1714–1837)]]"
-followed-by: "[[Edwardian & WWI London (1901–1918)]]"
+starts: 1939
+ends: 1945
+preceded-by: "[[Interwar London (1918–1939)]]"
+followed-by: "[[Postwar London (1945–1980)]]"
 ---
 
-# Victorian London (1837–1901)
+# WWII & Blitz London (1939–1945)
 
-Railways, sewers, the Underground, the Metropolitan Board of Works, and the slums that all of it was meant to answer.
+Evacuation, the Blitz of 1940–41, the V-1 and V-2 campaigns of 1944–45, and destruction on a scale that set the terms for everything built in the next thirty years.
 
-Boundary years belong to the later period: 1901 is the first year of the next
+Boundary years belong to the later period: 1945 is the first year of the next
 period, not the last of this one (see `_registry/periods.md`). Where a source draws the
 line differently, follow the registry and note the discrepancy in the event body — the
 value of these links is that they mean the same thing in every chapter.

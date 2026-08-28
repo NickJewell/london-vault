@@ -26,7 +26,11 @@ first encounter with real provenance).
 | Stuart London (1603–1714) | period | — | `Periods/Stuart London (1603–1714).md` | note | seed |
 | Georgian London (1714–1837) | period | — | `Periods/Georgian London (1714–1837).md` | note | seed |
 | Victorian London (1837–1901) | period | — | `Periods/Victorian London (1837–1901).md` | note | seed |
-| 20th-Century London (1901–2000) | period | — | `Periods/20th-Century London (1901–2000).md` | note | seed |
+| Edwardian & WWI London (1901–1918) | period | — | `Periods/Edwardian & WWI London (1901–1918).md` | note | seed |
+| Interwar London (1918–1939) | period | — | `Periods/Interwar London (1918–1939).md` | note | seed |
+| WWII & Blitz London (1939–1945) | period | — | `Periods/WWII & Blitz London (1939–1945).md` | note | seed |
+| Postwar London (1945–1980) | period | — | `Periods/Postwar London (1945–1980).md` | note | seed |
+| Modern & Contemporary London (1980–present) | period | — | `Periods/Modern & Contemporary London (1980–present).md` | note | seed |
 
 <!-- END generated: taxonomy -->
 

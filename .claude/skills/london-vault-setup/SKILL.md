@@ -49,7 +49,7 @@ Adding a period is a schema change and needs the user's approval (§4). Two thin
 touching the data:
 
 - **Renames migrate.** Every event and claim links a period by exact name, so renaming
-  `20th-Century London (1901–2000)` orphans every link to it. The generator reports leftover notes
+  `Postwar London (1945–1980)` orphans every link to it. The generator reports leftover notes
   as STALE but will not rewrite links — grep for the old name and fix them in the same commit, or
   do the rename before any extraction has happened.
 - **Boundaries move events.** Narrowing a period reassigns events that sat in the part now covered
@@ -113,10 +113,10 @@ Do not re-seed. Instead:
 ## Obsidian plugins
 
 The schema's derived views (a person's footprint, "everything Norman", timelines) are Dataview
-queries, and the templates ship with them. **Dataview is not installed in this vault** — the
-queries are inert until the user installs it from Obsidian's community plugins. Everything else in
-the vault works without it: the notes, links, frontmatter, and graph are all plain Markdown.
+queries, and the templates ship with them. Dataview is installed in this vault, so they render.
 
-Mention this once when seeding a new vault. Do not attempt to install plugins by editing
-`.obsidian/community-plugins.json` — the plugin's code is not there, and listing it without its
-files gives Obsidian a broken entry rather than a working plugin.
+If a seed lands in a vault without it, the queries are inert code fences and everything else still
+works — notes, links, frontmatter and the graph are plain Markdown. Do not try to install plugins
+by editing `.obsidian/community-plugins.json`: the plugin's code is not there, and listing it
+without its files gives Obsidian a broken entry rather than a working plugin. Tell the user to
+install it from Obsidian's community plugins instead.

@@ -25,10 +25,14 @@ answers "show me everything Norman", the date makes timelines sortable.
 | `[[Tudor London (1485–1603)]]` | 1485 | 1603 | Medieval London | Stuart London |
 | `[[Stuart London (1603–1714)]]` | 1603 | 1714 | Tudor London | Georgian London |
 | `[[Georgian London (1714–1837)]]` | 1714 | 1837 | Stuart London | Victorian London |
-| `[[Victorian London (1837–1901)]]` | 1837 | 1901 | Georgian London | 20th-Century London |
-| `[[20th-Century London (1901–2000)]]` | 1901 | 2000 | Victorian London | — |
+| `[[Victorian London (1837–1901)]]` | 1837 | 1901 | Georgian London | Edwardian & WWI London |
+| `[[Edwardian & WWI London (1901–1918)]]` | 1901 | 1918 | Victorian London | Interwar London |
+| `[[Interwar London (1918–1939)]]` | 1918 | 1939 | Edwardian & WWI London | WWII & Blitz London |
+| `[[WWII & Blitz London (1939–1945)]]` | 1939 | 1945 | Interwar London | Postwar London |
+| `[[Postwar London (1945–1980)]]` | 1945 | 1980 | WWII & Blitz London | Modern & Contemporary London |
+| `[[Modern & Contemporary London (1980–present)]]` | 1980 | 2100* | Postwar London | — |
 
-\* open at the start — the bound is a working value so timelines sort, not a claim.
+\* open bound — a working value so timelines sort and date comparisons behave, not a claim.
 
 <!-- END generated: taxonomy -->
 
@@ -50,5 +54,11 @@ transition itself, link both periods as a list.
 is open at its start, and its nominal `starts: -4000` is a sorting bound, not a boundary. BCE
 years go in frontmatter as negative numbers (`date: -55`) with "55 BCE" written in the body.
 
-**After 2000**: there is no period note. Use the ISO date alone, omit `period:`, and tag
-`#flag/vocab-gap` so the user can decide whether the taxonomy needs extending.
+**Recent material**: `[[Modern & Contemporary London (1980–present)]]` is open at its end, so it
+takes everything from 1980 onward. Its nominal `ends: 2100` exists so date comparisons behave; it
+is not a boundary, and nothing after it needs a flag.
+
+**Boundary labels**: a period's label ends on the year the next one begins, so `Postwar London
+(1945–1980)` runs to the end of 1979 and 1980 opens the next period. This is why Postwar is
+labelled 1945–1980 rather than 1945–1979 — the convention keeps any year from falling between two
+periods.
