@@ -30,7 +30,7 @@ CONTENT_DIRS = [
     "People", "Places", "Organizations", "Events",
     "Periods", "Concepts", "Claims", "Sources",
 ]
-SKIP_DIRS = {"_registry", "_templates", "_schema", ".obsidian", ".git", ".claude"}
+SKIP_DIRS = {"_registry", "_templates", "_schema", "_inbox", ".obsidian", ".git", ".claude"}
 
 TYPES_BY_DIR = {
     "People": {"person"},

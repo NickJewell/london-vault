@@ -16,6 +16,9 @@ from pathlib import Path
 FOLDERS = [
     "People", "Places", "Organizations", "Events", "Periods",
     "Concepts", "Claims", "Sources", "_registry", "_templates",
+    # Capture pipeline: Shortcuts drops OCR text in _inbox/, ingest_text.py cleans it into
+    # clean/, and raw files move to done/ once their chapter has been extracted.
+    "_inbox", "_inbox/clean", "_inbox/done",
 ]
 
 GITKEEP = (

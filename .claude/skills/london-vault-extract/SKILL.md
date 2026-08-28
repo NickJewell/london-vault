@@ -20,6 +20,18 @@ cat _registry/reigns.md                     # for any reign-relative date
 If `_registry/` is missing, stop and run `london-vault-setup` first. Extracting into an unseeded
 vault produces notes that nothing can be reconciled against.
 
+## Where the text comes from
+
+A chapter reaches you either pasted into the conversation, or as a cleaned file in `_inbox/clean/`
+produced by `london-vault-ingest` from photographed pages. For a clean file, its header carries
+`book`, `chapter` and `pages` — use those verbatim for every `source:` and `page:` field, and read
+the header's `flag:` lines first. They record OCR damage found in that specific text, and a
+`suspect-year` flag means a date in the passage may be a letter-for-digit misread; check it against
+the photograph before it reaches frontmatter rather than after.
+
+Where clean text carries `[p. N]` markers, cite the page the passage actually sits on rather than
+the file's whole range.
+
 ## Before you start: what you are being asked for
 
 Establish these, and ask if the text does not tell you — a chapter extracted under the wrong

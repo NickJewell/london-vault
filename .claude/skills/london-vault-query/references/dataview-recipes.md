@@ -157,7 +157,7 @@ WHERE disputes SORT file.name ASC
 
 ````
 ```dataview
-TABLE type, file.folder AS "Folder" FROM ""
+TABLE type, file.folder AS "Folder" FROM "" AND -"_inbox" AND -"_templates"
 WHERE contains(string(source), "Chapter 8") OR contains(string(first-seen), "Chapter 8")
 SORT file.folder ASC
 ```
